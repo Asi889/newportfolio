@@ -2,9 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const ContactMap = () => {
-  const configValue: string = (process.env.NEXT_PUBLIC_BBC as string);
-  console.log(configValue);
-  console.log("process.env.BBC");
+  
   //change
   const defaultProps = {
     center: {
