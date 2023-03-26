@@ -5,7 +5,7 @@ const ContactMap = () => {
   const configValue: string = (process.env.NEXT_PUBLIC_BBC as string);
   console.log(configValue);
   console.log("process.env.BBC");
-  
+  //change
   const defaultProps = {
     center: {
       lat: 10.99835602,
