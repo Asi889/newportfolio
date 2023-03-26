@@ -4,7 +4,7 @@ import Layout from './components/layout/Layout';
 export const Context = createContext();
 
 export default function App({ Component, pageProps }) {
-    const [darkTheme, setDarkTheme] = useState(false);
+    const [darkTheme, setDarkTheme] = useState(true);
     function toggleTheme(){
       setDarkTheme(prev => !prev)
     }

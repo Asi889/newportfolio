@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ContactMap from "./ContactMap";
-import ContactList from "./Contact/ContactList";
+import ContactList from "./contact/ContactList";
 import UseAnimatedText from './UseAnimatedText';
 import ParticlesBackground from './ParticlesBackground';
 import FramerText from './FramerText';
