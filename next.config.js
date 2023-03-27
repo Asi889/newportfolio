@@ -15,6 +15,7 @@ const nextConfig = {
 
     return config;
   },
+  pageExtensions: ['index.jsx']
 }
 
 module.exports = nextConfig
