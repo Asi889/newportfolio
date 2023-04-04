@@ -1,4 +1,5 @@
-const aboutParticlesConfigLightMode = {
+const aboutParticlesConfigLightMode =()=>{
+  const configData = [{
     autoPlay: true,
     background: {
       color: {
@@ -642,6 +643,9 @@ const aboutParticlesConfigLightMode = {
     themes: [],
     zLayers: 100,
     emitters: []
-  }
+  }]
+  return configData;
+} 
+
   
   export default aboutParticlesConfigLightMode

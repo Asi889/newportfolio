@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 import '../styles/globals.css';
-import Layout from './components/layout/Layout';
+import Layout from '../components/layout/Layout';
 export const Context = createContext();
 
 export default function App({ Component, pageProps }) {

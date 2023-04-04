@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useAnimation, motion } from "framer-motion";
 
 const UseAnimatedText = ({text})=> {
 
@@ -46,7 +46,7 @@ const UseAnimatedText = ({text})=> {
   
   return (
     <motion.h2 className="flex flex-wrap" aria-label={text} role="heading">
-      {text.split(" ").map((word, index) => {
+      {text?.split(" ").map((word, index) => {
         return (
 
           <motion.span
@@ -62,7 +62,7 @@ const UseAnimatedText = ({text})=> {
               staggerChildren: 0.05,
             }}
           >
-            {word.split("").map((character, index) => {
+            {word?.split("").map((character, index) => {
               return (
                 <motion.span
                   aria-hidden="true"

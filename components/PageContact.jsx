@@ -4,7 +4,7 @@ import ContactList from "./contact/ContactList";
 import UseAnimatedText from './UseAnimatedText';
 import ParticlesBackground from './ParticlesBackground';
 import FramerText from './FramerText';
-import { Context } from '../_app';
+import { Context } from '../pages/_app';
 function PageContact(props) {
     const theme = useContext(Context)
 

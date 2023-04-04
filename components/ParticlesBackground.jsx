@@ -1,16 +1,24 @@
 import React, { useCallback, useContext } from 'react';
 import Particles from "react-particles";
-import particlesConfig from './config/particles.config';
-import aboutParticlesConfig from './config/aboutparticles.config';
-import aboutParticlesConfigLightMode from './config/aboutparticleslightmode.config';
-import particlesLightMode from './config/particleslightmode.config';
+// import  particlesConfig  from '../src/config/particles';
+import aboutParticlesConfig  from '../src/config/aboutparticles';
+import aboutParticlesConfigLightMode from '../src/config/aboutparticleslightmode';
+import particlesLightMode from '../src/config/particleslightmode';
+// import particlestest from '../src/config/particlestest';
 import { loadFull } from "tsparticles";
 import { useRouter } from 'next/router'
-import { Context } from "../_app";
+import { Context } from "../pages/_app";
+import ThePartclesTest from "./ThePartclesTest"
+
 
 
 function ParticlesBackground(props) {
-
+    // const particle = particlesConfig()[0];
+    // const particlestest1 = particlestest();
+    const theparticlestest1 = ThePartclesTest()[0];
+    const particleLightModeConfig = particlesLightMode()[0];
+    const aboutParticel = aboutParticlesConfig()[0]
+    const aboutParticelLight = aboutParticlesConfigLightMode()[0]
     const theme = useContext(Context)
 
     const router = useRouter()
@@ -36,17 +44,17 @@ function ParticlesBackground(props) {
                 options={
                     router.pathname === '/about' && theme.darkTheme === false || router.pathname === '/projects' && theme.darkTheme === false
                         ?
-                        aboutParticlesConfigLightMode
+                        aboutParticelLight
                         :
                         router.pathname === '/about' || router.pathname === '/projects'
                             ?
-                            aboutParticlesConfig
+                            aboutParticel
                             :
                             theme.darkTheme === false
                                 ?
-                                particlesLightMode
+                                particleLightModeConfig
                                 :
-                                particlesConfig
+                                theparticlestest1
                 }
             />
 

@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 // import { NextSeo } from "next-seo";
 // import { seoMerge } from "../../src/services/next-seo-config";
-import FramerText from "../components/FramerText";
-import Head from "../components/Head";
-import ParticlesBackground from "../components/ParticlesBackground";
+import FramerText from "../../components/FramerText";
+// import Head from "../components/Head";
+import ParticlesBackground from "../../components/ParticlesBackground";
 
 const Gallery = () => {
     const animateText = [

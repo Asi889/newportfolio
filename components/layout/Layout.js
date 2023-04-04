@@ -1,7 +1,8 @@
 // import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import NavBar from '../NavBar';
-import InformationIcaon from '../images/InformationIcon';
+// import NavBar from '../NavBar';
+// import InformationIcaon from '../../../components/images/InformationIcon';
 import { useState } from 'react';
 import OpenNav from '../OpenNav';
 import Head from '../Head';

@@ -1,14 +1,15 @@
 
-import ParticlesBackground from "./components/ParticlesBackground";
+import ParticlesBackground from "../components/ParticlesBackground";
 import { motion } from "framer-motion";
-import FramerText from "./components/FramerText";
-import Head from "./components/Head";
-import { navs } from "./src/utils/utils";
-import ContentTyper from "./components/ContentTyper";
+import FramerText from "../components/FramerText";
+import Head from "../components/Head";
+import  navs  from "../src/services/utils";
+import ContentTyper from "../components/ContentTyper";
 import { Context } from "./_app";
 import { useContext } from "react";
 
 export default function Home() {
+  const navLinks= navs()
 const theme = useContext(Context)
   const hiText = [
     { type: "paragraph", text: "Hi," },
@@ -40,7 +41,7 @@ const theme = useContext(Context)
             </div>
           </div>
           <div className=" railway text-[#d49090] w-full z-10 md:flex grid justify-center flex-wrap  h-fit ml-auto mb-4 mr-10 pb-10 pr-10 self-end font-extrabold gap-x-10 gap-y-4">
-            {navs.map((nav, index) => {
+            {navLinks.map((nav, index) => {
               return (
                 <motion.a
                   href={nav.to}

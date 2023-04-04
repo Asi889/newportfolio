@@ -3,7 +3,10 @@
 import { useState, useContext } from "react";
 import { useRouter } from 'next/router'
 import Hamburger from "./Hamburger";
-import { Context } from "../_app";
+// import Hamburger from "../../components/Hamburger";
+import { Context } from "../pages/_app";
+// import { Context } from "../pages/_app";
+// import { Context } from "../_app";
 import DarkModeToggle from "./DarkModeToggle"
 
 
@@ -36,7 +39,7 @@ const NavBar = function ({ isOpen, handleHamburger }) {
 
         <Hamburger isOpen={isOpen} handleHamburger={handleHamburger} />
 
-        <DarkModeToggle />
+        {/* <DarkModeToggle /> */}
 
 
         <a className="navbar-brand railway text-2xl text-white z-50 lg:order-3 order-2" href="/assets/asafmaromcv.pdf" download target="_blank" rel="noopener">Asaf Marom</a>

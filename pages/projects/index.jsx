@@ -1,7 +1,7 @@
-import Head from "../components/Head";
-import ParallaxTest from "../components/ParallaxTest";
-import ParticlesBackground from "../components/ParticlesBackground";
-import FramerText from "../components/FramerText";
+import Head from "../../components/Head";
+import ParallaxTest from "../../components/ParallaxTest";
+import ParticlesBackground from "../../components/ParticlesBackground";
+import FramerText from "../../components/FramerText";
 import { useContext } from "react";
 import { Context } from "../_app";
 // import { seoMerge } from "../../src/services/next-seo-config";

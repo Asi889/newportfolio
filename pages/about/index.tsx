@@ -2,9 +2,9 @@
 import Link from "next/link";
 import React, { useContext } from 'react';
 
-import ParticlesBackground from "../components/ParticlesBackground";
-import MotionText from "../components/MotionText";
-import FramerText from "../components/FramerText";
+import ParticlesBackground from "../../components/ParticlesBackground";
+import MotionText from "../../components/MotionText";
+import FramerText from "../../components/FramerText";
 import { Context } from '../_app';
 
 function About() {

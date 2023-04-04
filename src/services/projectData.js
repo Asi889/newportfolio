@@ -1,4 +1,4 @@
-export const projectData = ()=>{
+export default function projectData(){
     const projects=[
         {
             title: `Tsofen landing page`,

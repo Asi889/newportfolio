@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { motion } from "framer-motion";
 import MotionText from "./MotionText";
 
@@ -34,18 +34,21 @@ const AnimatedCharacters = (props) => {
   };
 
   //  Split each word of props.text into an array
-  const splitWords = props.text.split(" ");
+  const splitWords = props.text?.split(" ");
 
   // Create storage array
   const words = [];
 
   // Push each word into words array
-  for (const [, item] of splitWords.entries()) {
-    words.push(item.split(""));
+  if(splitWords){
+
+    for (const [, item] of splitWords.entries()) {
+     words.push(item.split(""));
+   }
   }
 
   // Add a space ("\u00A0") to the end of each word
-  words.map((word) => {
+  words?.map((word) => {
     return word.push("\u00A0");
   });
 // console.log(words);
@@ -56,11 +59,11 @@ const AnimatedCharacters = (props) => {
 
   return (
     <Tag className={`${Tag ===""}`}>
-      {words.map((word, index) => {
+      {words?.map((word, index) => {
         return (
           // Wrap each word in the Wrapper component
           <Wrapper key={index}>
-            {words[index].flat().map((element, index) => {
+            {words[index]?.flat().map((element, index) => {
               // console.log(index);
               // console.log("33");
               return (

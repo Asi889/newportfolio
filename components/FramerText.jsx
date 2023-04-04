@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import AnimatedText from "./AnimatedText";
+import AnimatedCharacters from "./AnimatedCharacters";
 
 const FramerText = (props) => {
 
@@ -15,12 +15,7 @@ const FramerText = (props) => {
     }
   };
 
-  const handleReplay = () => {
-    setReplay(!replay);
-    setTimeout(() => {
-      setReplay(true);
-    }, 600);
-  };
+
 
   return (
     <>
@@ -35,9 +30,9 @@ const FramerText = (props) => {
             variants={container}
           >
             <div className="">
-              {props?.hiText?.map((item, index) => {
-                return <AnimatedText {...item} key={index} />;
-              })}
+              {props?.hiText ? props?.hiText?.map((item, index) => {
+                return <AnimatedCharacters {...item} key={index} />;
+              }) : ""}
 
             </div>
 
@@ -53,9 +48,9 @@ const FramerText = (props) => {
         variants={container}
       >
         <div className="">
-          {props.animateText.map((item, index) => {
-            return <AnimatedText {...item} key={index} />;
-          })}
+          {props?.animateText ? props?.animateText?.map((item, index) => {
+            return <AnimatedCharacters {...item} key={index} />;
+          }) : ""}
         </div>
 
       </motion.div>

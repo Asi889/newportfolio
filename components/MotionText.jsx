@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { motion, useAnimation, useAnimationControls } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import { Context } from '../_app';
+import { Context } from '../pages/_app';
 
 function MotionText(props,{children}) {
   const theme = useContext(Context)

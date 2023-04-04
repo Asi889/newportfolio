@@ -2,11 +2,11 @@
 import Link from 'next/link';
 import React, { useContext } from 'react';
 import { Parallax, Background } from "react-parallax";
-import { projectData } from '../src/services/projectData';
+import  projectData  from '../src/services/projectData';
 import { useRouter } from 'next/router'
 import ParticlesBackground from './ParticlesBackground';
 import FramerText from './FramerText';
-import { Context } from '../_app';
+import { Context } from '../pages/_app';
 
 
 function ParallaxTest(props) {
