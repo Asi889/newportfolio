@@ -1,10 +1,8 @@
 import React, { useCallback, useContext } from 'react';
 import Particles from "react-particles";
-// import  particlesConfig  from '../src/config/particles';
 import aboutParticlesConfig  from '../src/config/aboutparticles';
 import aboutParticlesConfigLightMode from '../src/config/aboutparticleslightmode';
 import particlesLightMode from '../src/config/particleslightmode';
-// import particlestest from '../src/config/particlestest';
 import { loadFull } from "tsparticles";
 import { useRouter } from 'next/router'
 import { Context } from "../pages/_app";
@@ -13,8 +11,7 @@ import ThePartclesTest from "./ThePartclesTest"
 
 
 function ParticlesBackground(props) {
-    // const particle = particlesConfig()[0];
-    // const particlestest1 = particlestest();
+    
     const theparticlestest1 = ThePartclesTest()[0];
     const particleLightModeConfig = particlesLightMode()[0];
     const aboutParticel = aboutParticlesConfig()[0]
