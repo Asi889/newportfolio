@@ -6,8 +6,7 @@ import { Context } from '../pages/_app';
 function MotionText(props,{children}) {
   const theme = useContext(Context)
   const {index} = props;
-  // console.log(children)
-  // console.log("index")
+
     const controls= useAnimationControls();
   const [isPlaying, setIsPlaying] = useState(false);
   const string = "Hi, I'm Asaf Marom (AKA  Asi)".split('');
@@ -17,8 +16,7 @@ function MotionText(props,{children}) {
     triggerOnce: true,
   });
 
-  // console.log(props);
-  // console.log("props9999999");
+  
 
   
   const rubberBand = () => {

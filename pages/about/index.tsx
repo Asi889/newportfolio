@@ -23,17 +23,10 @@ function About() {
 
       <div className={`about_text railway lg:text-4xl text-3xl pl-4 w-full  h-full bg-none z-50   ${theme.darkTheme ? "text-[#b3acac]" :"text-black"} relative  `}>
         <div className="z-50 opacity-100 absolute w-full h-fit p-4 pt-10">
-          {/* <div className="absolute w-full h-full  bg-[#1b1b1b] opacity-70 z-10 "></div> */}
           <div className="md:text-[40px] text-[30px] font-bold text-[#47ebde] motion-text">
           <FramerText animateText={animateText} />
-            {/* {title.map((char, index) => {
-              console.log(char);
-              console.log("char");
-              
-              return <MotionText key={index}>{char}</MotionText>;
-            })} */}
+        
           </div>
-          {/* <h1 className="galindo font-bold text-6xl">About </h1> */}
           <p className="first_text pt-10 font opacity-100 z-50">
             {`I am a Full-Stack web developer who is self-motivated, organized, and
           team-oriented. I am seeking a dynamic position where I can use my analytical
@@ -42,7 +35,6 @@ function About() {
           love a challenge, and am always ready to learn something new.`}
           </p>
           <br></br>
-          {/* <em className="bold_elevation">  Elevation Academy</em> */}
 
           <p className="second_text">
             I am a graduate of{" "}

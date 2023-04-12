@@ -16,18 +16,18 @@ function PageContact(props) {
        
         <div className=' flex flex-col 2xl:flex-row  w-full h-screen bg-[#333232] railway relative'>
             <ParticlesBackground />
-            <div className={`w-full  pl-10 pt-20 z-50 flex-1 ${theme.darkTheme ? "text-white" :"text-black"}`}>
+            <div className={`w-full md:pl-10 pl-6 pr-6 md:pr-0 md:pt-20 pt-10 pt z-50  flex-1 ${theme.darkTheme ? "text-white" :"text-black"}`}>
 
                 <div className='md:text-[40px] text-[30px] motion-text'>
                     <FramerText animateText={animateText} />
                 </div>
                 <div className='mt-6 md:mt-10 max-w-[600px]'><UseAnimatedText text={bodyText} /></div>
-                <div className='flex flex-col md:flex-row pt-6'>
-                    <div className=''>
+                <div className='flex flex-col ab:flex-row pt-6'>
+                    <div className='md:pt-14 pt-4 flex-1'>
                         <ContactList />
                     </div>
 
-                    <div className='w-full grid items-center justify-center z-50 h-full flex-1'>
+                    <div className='w-full  grid items-center justify-center z-50 h-full flex-1 pt-14 md:pt-10 pr-4'>
                         <ContactMap />
                     </div>
                 </div>

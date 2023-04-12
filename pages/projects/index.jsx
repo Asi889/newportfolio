@@ -1,5 +1,6 @@
 import Head from "../../components/Head";
 import ParallaxTest from "../../components/ParallaxTest";
+import MyParallax from "../../components/MyParallax";
 import ParticlesBackground from "../../components/ParticlesBackground";
 import FramerText from "../../components/FramerText";
 import { useContext } from "react";
@@ -27,7 +28,8 @@ const Projects = () => {
                 <FramerText animateText={animateText} />
             </div>
 
-            <ParallaxTest />
+            {/* <ParallaxTest /> */}
+            <MyParallax />
 
             {/* <NextSeo {...seo} /> */}
             {/* <h1>Test About Page</h1> */}

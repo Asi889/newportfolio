@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React, { useContext } from 'react';
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import  projectData  from '../src/services/projectData';
 import { useRouter } from 'next/router'
-import ParticlesBackground from './ParticlesBackground';
 import FramerText from './FramerText';
 import { Context } from '../pages/_app';
 
@@ -32,10 +31,12 @@ function ParallaxTest(props) {
                             </div>
 
                         </Parallax>
+                       
+                        
 
                         <div className="projec-img-wrapper ttt z-50 relative  lg:hidden flex  max-h-[500px] max-w-[200px] md:max-w-full  mx-auto items-center">
                             <img className="items-center  relative  w-full h-full z-50" alt="" src={computerImg}></img>
-                            <img className="project-img absolute  top-3 w-full   max-h-full object-cover rounded-lg" alt="" src={project.imgeSource}></img>
+                            <img className="project-img absolute  top-3 w-full    object-cover max-h-[120px] rounded-lg" alt="" src={project.imgeSource}></img>
                         </div>
 
                         <div className={` flex w-full justify-center z-50 mt-10  ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>

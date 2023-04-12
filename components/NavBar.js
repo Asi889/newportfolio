@@ -3,10 +3,8 @@
 import { useState, useContext } from "react";
 import { useRouter } from 'next/router'
 import Hamburger from "./Hamburger";
-// import Hamburger from "../../components/Hamburger";
 import { Context } from "../pages/_app";
-// import { Context } from "../pages/_app";
-// import { Context } from "../_app";
+
 import DarkModeToggle from "./DarkModeToggle"
 
 
