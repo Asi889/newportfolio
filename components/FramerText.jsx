@@ -25,8 +25,8 @@ const FramerText = (props) => {
 
             className="motin-text text-blue-200 galindo"
             initial="hidden"
-            // animate="visible"
-            animate={replay ? "visible" : "hidden"}
+            animate="visible"
+            // animate={replay ? "visible" : "hidden"}
             variants={container}
           >
             <div className="">

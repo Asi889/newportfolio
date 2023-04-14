@@ -14,11 +14,13 @@ const [isOpen, setIsOpen] = useState(false);
   }
 
   return (
-    <section className="lg:flex grid">      
+    <section className="flex flex-col lg:flex-row h-screen w-full">      
+    {/* <section className="lg:flex grid">       */}
     <Head></Head>
         <NavBar isOpen={isOpen} handleHamburger={handleHamburger} /> 
-        {isOpen && <OpenNav isOpen={isOpen} handleHamburger={handleHamburger} />}
-        {!isOpen && <main className="w-full h-screen">{children}</main>}
+        
+        {isOpen && <div className='w-full h-full'> <OpenNav isOpen={isOpen} handleHamburger={handleHamburger} /> </div>}
+        {!isOpen && <main className="w-full h-full">{children}</main>}
     </section>
   );
 };
