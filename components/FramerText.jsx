@@ -7,6 +7,13 @@ const FramerText = (props) => {
 
   const [replay, setReplay] = useState(true);
 
+  const handleReplay = () => {
+    setReplay(!replay);
+    setTimeout(() => {
+      setReplay(true);
+    }, 600);
+  };
+
   const container = {
     visible: {
       transition: {
@@ -23,13 +30,13 @@ const FramerText = (props) => {
         props?.hiText ?
           <motion.div
 
-            className="motin-text text-blue-200 galindo"
+            className="motin-text text-blue-200 galindo z-50"
             initial="hidden"
-            animate="visible"
-            // animate={replay ? "visible" : "hidden"}
+            // animate="visible"
+            animate={replay ? "visible" : "hidden"}
             variants={container}
           >
-            <div className="">
+            <div className="z-50">
               {props?.hiText ? props?.hiText?.map((item, index) => {
                 return <AnimatedCharacters {...item} key={index} />;
               }) : ""}

@@ -21,7 +21,7 @@ const AnimatedCharacters = (props) => {
   // Framer Motion variant object, for controlling animation
   const item = {
     hidden: {
-      y: "200%",
+      y: "450%",
       color: "#000000",
       transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
     },
@@ -68,17 +68,17 @@ const AnimatedCharacters = (props) => {
               return (
                 <span
                   style={{
-                    // overflow: "hidden",
+                    overflow: "hidden",
                     display: "inline-block"
                   }}
-                  className="text-red-400"
+                  className="text-red-400 z-50"
                   key={index}
                   
                 >
                   <motion.span
                     style={{ display: "inline-block" }}
                     variants={item}
-                    className="text-xl  text-red-400"
+                    className="text-xl  text-red-400 z-50"
                   >
                     <MotionText index={index} >
                       {element}

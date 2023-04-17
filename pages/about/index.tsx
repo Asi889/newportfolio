@@ -23,11 +23,12 @@ function About() {
 
       <div className={`about_text railway lg:text-4xl text-3xl pl-4 w-full  h-full bg-none z-50   ${theme.darkTheme ? "text-[#b3acac]" :"text-black"} relative  `}>
         <div className="z-50 opacity-100 absolute w-full h-fit p-4 pt-10">
-          <div className="md:text-[40px] text-[30px] font-bold text-[#47ebde] motion-text">
+          {/* <div className="md:text-[40px] text-[30px] text-[#47ebde] motion-text h-full z-50">
           <FramerText animateText={animateText} />
         
-          </div>
-          <p className="first_text pt-10 font opacity-100 z-50">
+          </div> */}
+          <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text"><FramerText animateText={animateText} /></h1>
+          <p className="first_text pt-4 font opacity-100 z-50">
             {`I am a Full-Stack web developer who is self-motivated, organized, and
           team-oriented. I am seeking a dynamic position where I can use my analytical
           and programming skills for developing quality software products. I
@@ -54,7 +55,7 @@ function About() {
           </p>
 
           <br></br>
-          <br></br>
+          {/* <br></br> */}
           <h3 className="font-bold border-b-2 border-[#47ebde] w-fit">
             {" "}
             My Current technical skill are
@@ -65,7 +66,7 @@ function About() {
               main-JavaScript(ES5/6) and PHP{" "}
             </span>
             <span>
-              <span className="font-bold ml-3">  Frameworks - </span>
+              <span className="font-bold ">Frameworks - </span>
               React,Next.js,Vue, MobX, Redux
             </span>
             <span>
@@ -73,7 +74,7 @@ function About() {
               HTML, CSS, Materialiez, BootStarp, Tailwind
             </span>
             <span>
-              <span className="font-bold ml-3">Server Side & DataBase - </span>
+              <span className="font-bold ">Server Side & DataBase - </span>
               Node.js Express, MongoDB, Mongoose,
             </span>
             <span>

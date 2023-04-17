@@ -21,7 +21,7 @@ const NavBar = function ({ isOpen, handleHamburger }) {
 
       return "relative"
     }
-    if (router.pathname === '/projects') return "fixed z-[999999999999999999]"
+    // if (router.pathname === '/projects') return "fixed z-[999999999999999999]"
     if (router.pathname === '/gallery') return "lg:fixed relative z-[999999999999999999]"
   }
 
@@ -30,14 +30,15 @@ const NavBar = function ({ isOpen, handleHamburger }) {
 
 
       <div className="lg:grid flex z-50 lg:justify-center justify-between content-between items-center py-10 h-full">
-
-        <a href="/" className="w-20 h-20 lg:mx-auto mx-4 z-50 order-1" >
-          <img className="w-20 h-20" src="https://res.cloudinary.com/dvdzjj8jo/image/upload/v1639907803/Asaf_up6v4r.png" alt=""></img>
-        </a>
+        <div className="lg:mx-auto mx-4 z-50 order-1 grid justify-items-center gap-y-6">
+          <a href="/" className="w-20 h-20 " >
+            <img className="w-20 h-20" src="https://res.cloudinary.com/dvdzjj8jo/image/upload/v1639907803/Asaf_up6v4r.png" alt=""></img>
+          </a>
+          <DarkModeToggle />
+        </div>
 
         <Hamburger isOpen={isOpen} handleHamburger={handleHamburger} />
 
-        {/* <DarkModeToggle /> */}
 
 
         <a className="navbar-brand railway text-2xl text-white z-50 lg:order-3 order-2" href="/assets/asafmaromcv.pdf" download target="_blank" rel="noopener">Asaf Marom</a>

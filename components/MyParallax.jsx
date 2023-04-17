@@ -35,9 +35,9 @@ function MyParallax(props) {
 
 
                             <div className={` flex w-full justify-center z-50 mt-10 flex-1 ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>
-                                <div className={`text-[#47ebde] relative lg:absolute text-6xl md:top-10 top-44  w-full ${theme.darkTheme ? "hidden" : "block"} text-center z-[9999] md:text-[40px] text-[30px] font-bold motion-text`}>
+                                {/* <div className={`text-[#47ebde] relative lg:absolute text-6xl md:top-10 top-44  w-full ${theme.darkTheme ? "hidden" : "block"} text-center z-[9999] md:text-[40px] text-[30px] font-bold motion-text`}>
                                     <FramerText animateText={animateText} />
-                                </div>
+                                </div> */}
 
                                 <div className="flex flex-col gap-y-4 justify-center w-full px-10 text-center z-50">
 

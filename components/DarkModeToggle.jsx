@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
-
+import { Context } from "../pages/_app";
+import { useContext } from "react";
 function DarkModeToggle({ colour = 'bg-blue-600', on = false, onToggle = () => {}, tabIndex = 0 }) {
     const [isOn, setIsOn] = useState(on);
-
+    const context = useContext(Context)
+    const themeToggle =  context.toggleTheme 
+    // console.log(theme);
+    // console.log("theme99");
     function toggle() {
         setIsOn(!isOn);
         onToggle(!isOn);
@@ -10,6 +14,7 @@ function DarkModeToggle({ colour = 'bg-blue-600', on = false, onToggle = () => {
 
     function handleClick() {
         toggle();
+        themeToggle()
     }
 
     function handleKeyDown({ key }) {
@@ -22,7 +27,7 @@ function DarkModeToggle({ colour = 'bg-blue-600', on = false, onToggle = () => {
             tabIndex={0}
             onKeyDown={handleKeyDown}
             onClick={handleClick}
-            className={`cursor-pointer w-11 h-5 bg-blue-300 rounded-full relative px-1.5 flex items-center${isOn ? '' : ' justify-end'}`}
+            className={`cursor-pointer w-11 h-5 transition duration-300 ${isOn ? "bg-blue-300" : "bg-blue-900"} rounded-full relative px-1.5 flex items-center${isOn ? '' : ' justify-end'}`}
         >
             <div className={`w-4 h-4 rounded-full absolute transform duration-200 ease-out bg-white left-0.5 ${isOn ? 'translate-x-6' : 'translate-x-0'}`} />
             {isOn ? (

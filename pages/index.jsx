@@ -49,7 +49,7 @@ const theme = useContext(Context)
                   className={`italic border-b-2  ${theme.darkTheme ? "text-[#47ebde]" :"text-black"} hover:text-white transition-all border-white h-fit w-fit z-10 text-5xl`}
                   initial={{ y: '-200vh' }}
                   animate={{ y: 0 }}
-                  transition={{ type: "spring", delay: 1.6 + Number(`0.${index}`), duration: 1 }}
+                  transition={{ type: "spring", delay: 0.5 + Number(`0.${index}`), duration: 3.5 }}
                 >
                   {nav.name}
                 </motion.a>
