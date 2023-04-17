@@ -23,11 +23,11 @@ const Head = ({ children, title }) => (
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
             {/* ///////////////// */}
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+            {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" /> */}
             {/* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             <script src="https://leemark.github.io/better-simple-slideshow/demo/js/hammer.min.js"></script> */}
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            {/* <link rel="preconnect" href="https://fonts.gstatic.com" /> */}
             <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"></link>

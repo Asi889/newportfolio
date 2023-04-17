@@ -1,13 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-// import { NextSeo } from "next-seo";
-// import { seoMerge } from "../../src/services/next-seo-config";
+import { NextSeo } from "next-seo";
+import { seoMerge } from "../../src/services/next-seo-config";
 import FramerText from "../../components/FramerText";
 import ParticlesBackground from "../../components/ParticlesBackground";
 import React, { useContext } from 'react';
 import { Context } from '../_app';
+import Head from "next/head";
 
 const Gallery = () => {
+    const seo = seoMerge({
+        title: "Asaf Marom",
+        description: `Asaf Marom's Profile website - Gallery page `,
+    });
     const theme = useContext(Context)
+            
 
     const animateText = [
         { type: "paragraph", text: "Gallery" },
@@ -26,16 +32,11 @@ const Gallery = () => {
         { type: 'video', source: 'https://res.cloudinary.com/dvdzjj8jo/video/upload/v1639487510/frisbee/20669507_1780883105536208_518853167710994432_n_tlssqo.mp4' },
         { type: 'video', source: 'https://res.cloudinary.com/dvdzjj8jo/video/upload/v1639487508/frisbee/20818476_298185227322235_2926608251845869568_n_pg5h4a.mp4' },
     ];
-    // const seo = seoMerge({
-    //     title: "Asaf Marom",
-    //     description: `Asaf Marom's Profile website - Gallery page `,
-    // });
+    
     return (
         <div id="main_container " className=" h-auto relative  railway lg:pl-[100px] pl-0 lg:mt-0  overflow-hidden">
-            {/* <Head></Head> */}
-            {/* <MultypleMasks /> */}
-            {/* <NextSeo {...seo} /> */}
-
+            <Head></Head>
+            <NextSeo {...seo} />
                 {/* <div className="absolute w-full h-scrren"> */}
                     <ParticlesBackground />
                 {/* </div> */}

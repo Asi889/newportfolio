@@ -1,33 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
 import ParticlesBackground from "../../components/ParticlesBackground";
 import MotionText from "../../components/MotionText";
 import FramerText from "../../components/FramerText";
-import { Context } from '../_app';
+import { Context } from "../_app";
+import { NextSeo } from "next-seo";
+import { seoMerge } from "../../src/services/next-seo-config";
 
 function About() {
   let title = "About me".split(" ");
-  const theme = useContext(Context)
+  const theme = useContext(Context);
 
-  const animateText = [
-    { type: "paragraph", text: "About me" },
-  ];
+  const animateText = [{ type: "paragraph", text: "About me" }];
+
+  const seo = seoMerge({
+    title: "Asaf Marom",
+    description: `Asaf Marom's Profile website - Gallery page `,
+  });
+
   return (
     <div
       id="sec2"
       className="about-page relative h-full grid  w-full overflow-x-hidden overflow-y-auto"
     >
+      <NextSeo {...seo} />
       <ParticlesBackground />
 
-      <div className={`about_text railway lg:text-4xl text-3xl pl-4 w-full  h-full bg-none z-50   ${theme.darkTheme ? "text-[#b3acac]" :"text-black"} relative  `}>
+      <div
+        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full  h-full bg-none z-50   ${
+          theme.darkTheme ? "text-[#b3acac]" : "text-black"
+        } relative  `}
+      >
         <div className="z-50 opacity-100 absolute w-full h-fit p-4 pt-10">
-          {/* <div className="md:text-[40px] text-[30px] text-[#47ebde] motion-text h-full z-50">
-          <FramerText animateText={animateText} />
-        
-          </div> */}
-          <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text"><FramerText animateText={animateText} /></h1>
+          <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text">
+            <FramerText animateText={animateText} />
+          </h1>
           <p className="first_text pt-4 font opacity-100 z-50">
             {`I am a Full-Stack web developer who is self-motivated, organized, and
           team-oriented. I am seeking a dynamic position where I can use my analytical

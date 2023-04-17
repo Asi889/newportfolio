@@ -5,22 +5,23 @@ import ParticlesBackground from "../../components/ParticlesBackground";
 import FramerText from "../../components/FramerText";
 import { useContext } from "react";
 import { Context } from "../_app";
-// import { seoMerge } from "../../src/services/next-seo-config";
-// import { NextSeo } from "next-seo";
+import { NextSeo } from "next-seo";
+import { seoMerge } from "../../src/services/next-seo-config";
 
 const Projects = () => {
     const theme = useContext(Context)
 
-    // const seo = seoMerge({
-    //     title: "Asaf Marom",
-    //     description: `Asaf Marom's Profile website - Project's page `,
-    // });
+    const seo = seoMerge({
+        title: "Asaf Marom",
+        description: `Asaf Marom's Profile website - Project's page `,
+    });
     const animateText = [
         { type: "paragraph", text: "My projects" },
     ];
     return (
         <div id="" className="relative">
             <Head></Head>
+            <NextSeo {...seo} />
 
             <ParticlesBackground />
 
