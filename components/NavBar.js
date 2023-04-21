@@ -26,7 +26,7 @@ const NavBar = function ({ isOpen, handleHamburger }) {
   }
 
   return (
-    <div className={`w-full lg:max-w-[100px] max-w-screen max  bg-[#222] lg:h-screen h-full nav-bar z-50  ${checkk()}`} >
+    <div className={`w-full lg:max-w-[100px] max-w-screen max  bg-[#222] lg:h-screen h-fit nav-bar z-50  ${checkk()}`} >
 
 
       <div className="lg:grid flex z-50 lg:justify-center justify-between content-between items-center py-2 h-full">
