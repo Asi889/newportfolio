@@ -136,7 +136,25 @@ body {
 
 .motion-text span{
   display: inline-block;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+.motion-text .word-wrapper .smaller-title span{
+  display: inline-block;
+  font-size: 2rem;
+}
+/* .asi-text{ */
+.motion-text .word-wrapper .asi-text span{
+  /* display: inline-block;
+  font-size: 2rem; */
+  color: #47ebde;
+  
+}
+.motion-text .word-wrapper .asi-text span:hover{
+  /* display: inline-block;
+  font-size: 2rem; */
+  color: white;
+
 }
 
 

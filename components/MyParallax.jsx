@@ -21,7 +21,7 @@ function MyParallax(props) {
 
             {projects ? projects.map((project, index) => {
                 return (
-                    <div className={`lg:flex grid z-50 lg:pl-[100px] pl-[0px] lg:pt-[0px] pt-[50px]  ${router.pathname === "/projects"}`} key={index}>
+                    <div className={`lg:flex grid z-50  lg:pt-[0px] pt-[50px]  ${router.pathname === "/projects"}`} key={index}>
                         <div className={`lg:h-screen h-full w-full  z-50 lg:flex  grid `} >
 
                             <div className=' grid h-full p-10 relative flex-1'>

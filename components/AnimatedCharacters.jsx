@@ -56,13 +56,31 @@ const AnimatedCharacters = (props) => {
   // Get the tag name from tagMap
   const Tag = tagMap[props.type];
 
+  function checkArrayEquality(index) {
+    // let worda = ""
+    // arr.forEach((string)=> worda += string)
+    if(index == 7 || index == 6 || index == 5 || index == 8 ){
+      return true
+    }
+   
+  }
+  function asiCheck(index){
+    if(index === 7){
+      return true
+    }
+
+  }
+
   return (
     <Tag className={`${Tag ===""}`}>
-      {words?.map((word, index) => {
+      {words?.map((word, firstIndex) => {
+        // console.log(firstIndex);
+        // console.log("word");
         return (
           // Wrap each word in the Wrapper component
-          <Wrapper key={index}>
-            {words[index]?.flat().map((element, index) => {
+          <Wrapper key={firstIndex}>
+            {words[firstIndex]?.flat().map((element, index) => {
+              // console.log(element);
               // console.log(index);
               // console.log("33");
               return (
@@ -71,16 +89,16 @@ const AnimatedCharacters = (props) => {
                     overflow: "hidden",
                     display: "inline-block"
                   }}
-                  className="text-red-400 z-50"
+                  className={`text-red-400 z-50  `}
                   key={index}
                   
                 >
                   <motion.span
                     style={{ display: "inline-block" }}
                     variants={item}
-                    className="text-xl  text-red-400 z-50"
+                    className={`text-lg  text-red-400 z-50 gggg ${checkArrayEquality(firstIndex) ? "smaller-title " : " "} ${asiCheck(firstIndex) ? "asi-text" : ""}`}
                   >
-                    <MotionText index={index} >
+                    <MotionText index={index} firstIndex={firstIndex} >
                       {element}
                     </MotionText>
                   </motion.span>

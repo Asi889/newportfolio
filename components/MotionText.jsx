@@ -5,7 +5,7 @@ import { Context } from '../pages/_app';
 
 function MotionText(props,{children}) {
   const theme = useContext(Context)
-  const {index} = props;
+  const {index, firstIndex} = props;
 
     const controls= useAnimationControls();
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,6 +34,8 @@ function MotionText(props,{children}) {
     
   }
 
+  console.log(firstIndex);
+
     return (
         <>
         {props.children === "." ? <br/> : " "}
@@ -48,8 +50,7 @@ function MotionText(props,{children}) {
         }}
         onAnimationComplete={()=>setIsPlaying(false)}
         >
-            <span className={`hover:text-[#47ebde] ${theme.darkTheme ? "text-white" :"text-black"} `}>
-            {/* <span className={`hover:text-[#47ebde] ${props.children === "Asaf"     ? " text-[#47ebde]" : "" }`}> */}
+            <span className={` ${firstIndex == "7" ? "hover:text-[#cfa351]" : "hover:text-[#47ebde]" } ${theme.darkTheme ? "text-white" :"text-black"}  `}>
           {props.children}
             </span>
         </motion.span>

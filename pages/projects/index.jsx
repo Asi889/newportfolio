@@ -19,7 +19,7 @@ const Projects = () => {
         { type: "paragraph", text: "My projects" },
     ];
     return (
-        <div id="" className="relative">
+        <div id="" className="relative overflow-y-auto h-full">
             <Head></Head>
             <NextSeo {...seo} />
 

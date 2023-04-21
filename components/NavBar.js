@@ -26,13 +26,13 @@ const NavBar = function ({ isOpen, handleHamburger }) {
   }
 
   return (
-    <div className={`w-full lg:max-w-[100px] max-w-screen  bg-[#222] lg:h-screen h-[100px] nav-bar z-50  ${checkk()}`} >
+    <div className={`w-full lg:max-w-[100px] max-w-screen max  bg-[#222] lg:h-screen h-full nav-bar z-50  ${checkk()}`} >
 
 
-      <div className="lg:grid flex z-50 lg:justify-center justify-between content-between items-center py-10 h-full">
-        <div className="lg:mx-auto mx-4 z-50 order-1 grid justify-items-center gap-y-6">
-          <a href="/" className="w-20 h-20 " >
-            <img className="w-20 h-20" src="https://res.cloudinary.com/dvdzjj8jo/image/upload/v1639907803/Asaf_up6v4r.png" alt=""></img>
+      <div className="lg:grid flex z-50 lg:justify-center justify-between content-between items-center py-2 h-full">
+        <div className="lg:mx-auto mx-4 z-50 order-1 grid justify-items-center lg:gap-y-6 gap-y-2">
+          <a href="/" className="w-16 h-16 lg:w-20 lg:h-20 " >
+            <img className="w-16 h-16 lg:w-20 lg:h-20" src="https://res.cloudinary.com/dvdzjj8jo/image/upload/v1639907803/Asaf_up6v4r.png" alt=""></img>
           </a>
           <DarkModeToggle />
         </div>

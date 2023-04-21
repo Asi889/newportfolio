@@ -18,7 +18,7 @@ export default function Home() {
   ];
 
   const animateText = [
-    { type: "paragraph", text: "My name is Asaf Marom (A.K.A Asi)" },
+    { type: "paragraph", text: "My name is Asaf Marom ( A.K.A Asi )" },
   ];
   const seo = seoMerge({
     title: "Asaf Marom",
@@ -37,12 +37,12 @@ export default function Home() {
         <div className="relative z-10 motion-text flex flex-col  gap-x-[10px] mx-4 h-full">
           <div>
 
-            <div className="font-bold  md:mt-40 mt-10  h-fit">
+            <div className="font-bold   mt-10  h-fit">
 
               <FramerText animateText={animateText} hiText={hiText} />
 
             </div>
-            <div className={`max-w-[950px] md:h-[180px] h-[150px] flex flex-wrap ${theme.darkTheme ? "text-white" : "text-black"}  gap-x-0 md:mt-20 mt-10 h-fit railway`}>
+            <div className={`max-w-[950px] md:h-[180px] h-[150px] flex flex-wrap ${theme.darkTheme ? "text-white" : "text-black"}  gap-x-0   h-fit railway`}>
 
               <ContentTyper />
 
@@ -54,7 +54,7 @@ export default function Home() {
                 <motion.a
                   href={nav.to}
                   key={nav.to}
-                  className={`italic border-b-2  ${theme.darkTheme ? "text-[#47ebde]" : "text-black"} hover:text-white transition-all border-white h-fit w-fit z-10 text-5xl`}
+                  className={`italic border-b-2  ${theme.darkTheme ? "text-[#47ebde]" : "text-black"} hover:text-white transition-all border-white h-fit w-fit z-10 text-2xl`}
                   initial={{ y: '-200vh' }}
                   animate={{ y: 0 }}
                   transition={{ type: "spring", delay: 0.5 + Number(`0.${index}`), duration: 3.5 }}
