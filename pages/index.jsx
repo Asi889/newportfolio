@@ -37,7 +37,7 @@ export default function Home() {
         <div className="relative z-10 motion-text flex flex-col  gap-x-[10px] mx-4 h-full">
           <div>
 
-            <div className="font-bold   mt-10  h-fit">
+            <div className="font-bold md:mt-10  mt-4  h-fit">
 
               <FramerText animateText={animateText} hiText={hiText} />
 
@@ -48,13 +48,13 @@ export default function Home() {
 
             </div>
           </div>
-          <div className=" railway text-[#d49090] self-start w-full z-10 md:flex grid justify-center flex-wrap  md:h-full items-center items- h-auto ml-auto mb-4 mr-10 pb-10 pr-10  font-extrabold gap-x-10 gap-y-[3rem] mt-10">
+          <div className=" railway text-[#d49090] self-start w-full z-10 md:flex grid justify-center flex-wrap  md:h-full items-center items- h-auto ml-auto mb-4 mr-10 pb-10 pr-10  font-extrabold gap-x-10 gap-y-[1rem] mt-10">
             {navLinks.map((nav, index) => {
               return (
                 <motion.a
                   href={nav.to}
                   key={nav.to}
-                  className={`italic border-b-2  ${theme.darkTheme ? "text-[#47ebde]" : "text-black"} hover:text-white transition-all border-white h-fit w-fit z-10 text-2xl`}
+                  className={`italic border-b-2  ${theme.darkTheme ? "text-[#47ebde]" : "text-black"} hover:text-white transition-all border-white h-fit w-fit z-10 md:text-2xl text-lg`}
                   initial={{ y: '-200vh' }}
                   animate={{ y: 0 }}
                   transition={{ type: "spring", delay: 0.5 + Number(`0.${index}`), duration: 3.5 }}
