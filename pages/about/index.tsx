@@ -23,18 +23,18 @@ function About() {
   return (
     <div
       id="sec2"
-      className="about-page relative h-full grid  w-full overflow-x-hidden overflow-y-auto"
+      className="about-page relative h-full grid  w-full   pt-10"
     >
       <NextSeo {...seo} />
       <ParticlesBackground />
 
       <div
-        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full  h-full bg-none z-50   ${
+        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full pr-4 md:pr-0  h-full bg-none z-50 overflow-y-scroll  ${
           theme.darkTheme ? "text-[#b3acac]" : "text-black"
         } relative  `}
       >
-        <div className="z-50 opacity-100 absolute w-full h-fit p-4 pt-10">
-          <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text">
+        {/* <div className="z-50 opacity-100 absolute  w-full h-fit p-4 pt-10"> */}
+          <h1 className="lg:text-[40px] text-[30px] relative z-[99999] text-[#47ebde] motion-text">
             <FramerText animateText={animateText} />
           </h1>
           <p className="first_text pt-4 font opacity-100 z-50">
@@ -116,9 +116,9 @@ function About() {
               {/* <a download="asafmaromCV.pdf" target="_blank">📝 My resume</a> */}
             </Link>
           </em>
-        </div>
+        {/* </div> */}
       </div>
-      <div className={`about_img_pic z-50 w-full  items-center grid `}>
+      <div className={`about_img_pic z-50 w-full  items-center   lg:grid hidden `}>
         <img
           id="idabout_pic"
           className="lg:w-full w-0"

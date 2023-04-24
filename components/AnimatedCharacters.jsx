@@ -4,7 +4,7 @@ import MotionText from "./MotionText";
 // Word wrapper
 const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
-  return <span className="word-wrapper">{props.children}</span>;
+  return <span className="word-wrapper ">{props.children}</span>;
 };
 
 // Map API "type" vaules to JSX tag names
@@ -72,7 +72,7 @@ const AnimatedCharacters = (props) => {
   }
 
   return (
-    <Tag className={`${Tag ===""}`}>
+    <Tag className={`${Tag ===""} z-50 `}>
       {words?.map((word, firstIndex) => {
         // console.log(firstIndex);
         // console.log("word");
@@ -85,18 +85,15 @@ const AnimatedCharacters = (props) => {
               // console.log("33");
               return (
                 <span
-                  style={{
-                    overflow: "hidden",
-                    display: "inline-block"
-                  }}
-                  className={`text-red-400 z-50  `}
+                
+                  className={`text-red-400 overflow-hidden inline-block md:h-[92px] h-auto`}
                   key={index}
                   
                 >
                   <motion.span
                     style={{ display: "inline-block" }}
                     variants={item}
-                    className={`text-lg  text-red-400 z-50 gggg ${checkArrayEquality(firstIndex) ? "smaller-title " : " "} ${asiCheck(firstIndex) ? "asi-text" : ""}`}
+                    className={`text-lg  text-red-400 z-[999999999999999999999999] ${checkArrayEquality(firstIndex) ? "smaller-title " : " "} ${asiCheck(firstIndex) ? "asi-text" : ""}`}
                   >
                     <MotionText index={index} firstIndex={firstIndex} >
                       {element}

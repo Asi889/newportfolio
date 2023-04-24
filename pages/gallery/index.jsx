@@ -44,7 +44,7 @@ const Gallery = () => {
                
                 <div className="grid mt-20 z-50 max-w-[1200px] justify-self-center text-[#f3efef]">
                     
-                    <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text"><FramerText animateText={animateText} /></h1>
+                    <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text font-bold"><FramerText animateText={animateText} /></h1>
                     <h1 className={`lg:text-6xl text-4xl font-medium  mt-4 ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>{` A fun fact about me is that I'm a self-taught freestyle frisbee pro. On the weekend, you'll find me playing on the beach.`}</h1>
                     <p className={`gallery-sub-text text-4xl pt-4 ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>{`See more of my photos and videos on`} <a className="text-[#d35e5e] text-4xl font-bold" href="https://www.instagram.com/p/ByvaP3zgatA/?utm_medium=copy_link">Instagram</a> or <a className="text-[#d35e5e] text-4xl font-bold" href="https://vm.tiktok.com/ZSefoN5AC/">TikTok</a></p>
                 </div>

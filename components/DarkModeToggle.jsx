@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Context } from "../pages/_app";
 import { useContext } from "react";
-function DarkModeToggle({ colour = 'bg-blue-600', on = false, onToggle = () => {}, tabIndex = 0 }) {
-    const [isOn, setIsOn] = useState(on);
+function DarkModeToggle({ on = false, onToggle = () => { }, tabIndex = 0 }) {
     const context = useContext(Context)
-    const themeToggle =  context.toggleTheme 
-    // console.log(theme);
-    // console.log("theme99");
+    // const theme = context.darkTheme
+    const [isOn, setIsOn] = useState(on);
+    
+    const themeToggle = context.toggleTheme
+    
     function toggle() {
         setIsOn(!isOn);
         onToggle(!isOn);
     }
 
     function handleClick() {
+        
         toggle();
         themeToggle()
     }
@@ -20,6 +22,38 @@ function DarkModeToggle({ colour = 'bg-blue-600', on = false, onToggle = () => {
     function handleKeyDown({ key }) {
         if (key === 'Enter') toggle();
     }
+
+    // useEffect(() => {
+    //     const isDarkMode = localStorage.getItem("darkMode")
+    //     if (isDarkMode ) {
+            
+    //         toggle();
+            
+    //         themeToggle()
+            
+    //         return
+            
+    //     }
+
+    //     console.log(9999);
+
+    //     localStorage.setItem("darkMode", isOn);
+
+
+
+    // }, []);
+
+    // useEffect(() => {
+    //     const isDarkMode = localStorage.getItem("darkMode")
+    //     console.log(isDarkMode);
+    //     if (!isDarkMode || isDarkMode === null ) {
+
+    //         localStorage.setItem("darkMode", isOn);
+    //     }
+
+
+    //     // document.body.classList.toggle("dark-mode", isOn);
+    // }, []);
     return (
         <div
             role="checkbox"

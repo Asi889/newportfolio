@@ -50,7 +50,7 @@ function MotionText(props,{children}) {
         }}
         onAnimationComplete={()=>setIsPlaying(false)}
         >
-            <span className={`hover:text-[#47ebde]  ${theme.darkTheme ? "text-white" :"text-black"}  `}>
+            <span className={`hover:text-[#47ebde] z-[999999999999999999999999] h-100%  ${theme.darkTheme ? "text-white" :"text-black"}  `}>
           {props.children}
             </span>
         </motion.span>
