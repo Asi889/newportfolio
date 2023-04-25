@@ -50,8 +50,7 @@ const AnimatedCharacters = (props) => {
   words?.map((word) => {
     return word.push("\u00A0");
   });
-// console.log(words);
-// console.log("words");
+
 
   // Get the tag name from tagMap
   const Tag = tagMap[props.type];
@@ -74,15 +73,10 @@ const AnimatedCharacters = (props) => {
   return (
     <Tag className={`${Tag ===""} z-50 `}>
       {words?.map((word, firstIndex) => {
-        // console.log(firstIndex);
-        // console.log("word");
         return (
           // Wrap each word in the Wrapper component
           <Wrapper key={firstIndex}>
             {words[firstIndex]?.flat().map((element, index) => {
-              // console.log(element);
-              // console.log(index);
-              // console.log("33");
               return (
                 <span
                 

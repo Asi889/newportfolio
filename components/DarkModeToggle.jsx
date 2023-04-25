@@ -23,37 +23,7 @@ function DarkModeToggle({ on = false, onToggle = () => { }, tabIndex = 0 }) {
         if (key === 'Enter') toggle();
     }
 
-    // useEffect(() => {
-    //     const isDarkMode = localStorage.getItem("darkMode")
-    //     if (isDarkMode ) {
-            
-    //         toggle();
-            
-    //         themeToggle()
-            
-    //         return
-            
-    //     }
-
-    //     console.log(9999);
-
-    //     localStorage.setItem("darkMode", isOn);
-
-
-
-    // }, []);
-
-    // useEffect(() => {
-    //     const isDarkMode = localStorage.getItem("darkMode")
-    //     console.log(isDarkMode);
-    //     if (!isDarkMode || isDarkMode === null ) {
-
-    //         localStorage.setItem("darkMode", isOn);
-    //     }
-
-
-    //     // document.body.classList.toggle("dark-mode", isOn);
-    // }, []);
+    
     return (
         <div
             role="checkbox"

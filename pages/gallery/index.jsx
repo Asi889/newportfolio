@@ -49,9 +49,9 @@ const Gallery = () => {
                     <p className={`gallery-sub-text text-4xl pt-4 ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>{`See more of my photos and videos on`} <a className="text-[#d35e5e] text-4xl font-bold" href="https://www.instagram.com/p/ByvaP3zgatA/?utm_medium=copy_link">Instagram</a> or <a className="text-[#d35e5e] text-4xl font-bold" href="https://vm.tiktok.com/ZSefoN5AC/">TikTok</a></p>
                 </div>
                 <div className="img-wrapper flex flex-wrap gap-x-6 gap-y-6 mt-10 z-50 justify-center">
-                    {galleryData.map((item) => {
-                        if (item.type === "img") return <img className="video-img md:w-[400px] w-[200px] md:h-[400px] h-[200px]" src={item.source} alt="" />
-                        if (item.type === "video") return (<video className="video-img md:w-[400px] w-[200px] md:h-[400px] h-[200px] object-cover" controls>
+                    {galleryData.map((item,index) => {
+                        if (item.type === "img") return <img key={index} className="video-img md:w-[400px] w-[200px] md:h-[400px] h-[200px]" src={item.source} alt="" />
+                        if (item.type === "video") return (<video key={index} className="video-img md:w-[400px] w-[200px] md:h-[400px] h-[200px] object-cover" controls>
                             <source className="w-[450px] h-[450px] object-cover" src={item.source} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>)

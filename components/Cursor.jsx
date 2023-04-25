@@ -19,7 +19,6 @@ function Cursor({ cursorVariant }) {
     }
   }
 
-  console.log(mousePosition);
   useEffect(() => {
     const mouseMove = (e) => {
       setMousePosition({

@@ -34,7 +34,6 @@ function MotionText(props,{children}) {
     
   }
 
-  console.log(firstIndex);
 
     return (
         <>
@@ -43,7 +42,6 @@ function MotionText(props,{children}) {
         animate={controls}
         onHoverStart={()=>{
           if(!isPlaying){
-            console.log("boom");
             rubberBand()
         }
           
