@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 
 export default function App({ Component, pageProps }) {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
   function toggleTheme(){
     // setDarkTheme(prev => console.log(prev))
     // setDarkTheme(prev => !prev)

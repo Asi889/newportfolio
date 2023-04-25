@@ -14,9 +14,9 @@ const Map = () => {
       transition={{ type: "spring", delay: 1.5, duration: 1 }}
     >
       <iframe
-        className="  rounded-lg h-screen w-screen md:max-w-[500px] md:max-h-[500px] max-w-[200px] max-h-[200px]"
+        className="  rounded-lg  w-screen lg:max-w-[500px] lg:max-h-[500px] sm:max-w-[300px] sm:max-h-[300px] max-w-[200px] max-h-[200px]"
         src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJH3w7GaZMHRURkD-WwKJy-8E&key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}`}
-        // height="450"
+        height="600"
         // width="600"
         loading="lazy"
       ></iframe>

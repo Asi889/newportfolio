@@ -86,7 +86,7 @@ const AnimatedCharacters = (props) => {
               return (
                 <span
                 
-                  className={`text-red-400 overflow-hidden inline-block md:h-[92px] h-auto`}
+                  className={`text-red-400 overflow-hidden inline-block lg:h-[92px] h-auto`}
                   key={index}
                   
                 >

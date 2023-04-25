@@ -2,7 +2,7 @@ function LinkedinIcon() {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="linkedinIcon"
+        className="linkedinIcon lg:w-10 lg:h-10 w-6 h-6"
         viewBox="0 0 256 256"
       >
         <g >

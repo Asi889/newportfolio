@@ -34,7 +34,7 @@ const Gallery = () => {
     ];
     
     return (
-        <div id="main_container " className=" h-auto relative  railway lg:pl-[100px] pl-0 lg:mt-0  overflow-hidden">
+        <div id="main_container " className=" h-auto relative  railway lg:pl-[100px] pl-0 lg:mt-0  overflow-hidden pb-10">
             <Head></Head>
             <NextSeo {...seo} />
                 {/* <div className="absolute w-full h-scrren"> */}
@@ -42,7 +42,7 @@ const Gallery = () => {
                 {/* </div> */}
             <div className="grid relative  max-w-[1550px] px-6 mx-auto z-50 ">
                
-                <div className="grid mt-20 z-50 max-w-[1200px] justify-self-center text-[#f3efef]">
+                <div className="grid mt-10 z-50 max-w-[1200px] justify-self-center text-[#f3efef]">
                     
                     <h1 className="lg:text-[40px] text-[30px]  text-[#47ebde] motion-text font-bold"><FramerText animateText={animateText} /></h1>
                     <h1 className={`lg:text-6xl text-4xl font-medium  mt-4 ${theme.darkTheme ? "text-[#e0d9d9]" : "text-black"}`}>{` A fun fact about me is that I'm a self-taught freestyle frisbee pro. On the weekend, you'll find me playing on the beach.`}</h1>

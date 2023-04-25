@@ -25,7 +25,7 @@ const Projects = () => {
 
             <ParticlesBackground />
 
-            <div className={`text-[#47ebde] relative md:top-10 top-44  w-full  text-center z-[999999999999] lg:text-[40px] text-[30px]  font-bold motion-text`}>
+            <div className={`text-[#47ebde] pb-10 relative railway  pt-10  w-full  text-center z-[999999999999] lg:text-[40px] text-[30px]  font-bold motion-text`}>
             {/* <div className={`text-[#47ebde] relative lg:absolute text-6xl md:top-10 top-44  w-full ${theme.darkTheme ? "block" :"hidden"} text-center z-[9999] md:text-[40px] text-[30px] font-bold motion-text`}> */}
                 <FramerText animateText={animateText} />
             </div>

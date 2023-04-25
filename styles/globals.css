@@ -207,3 +207,11 @@ body {
   height: 0;
 }
 
+@media (max-width: 1412px) {
+/* @media (max-width: 1015px) { */
+
+  .gallery-navbar{
+    position: relative;
+  }
+}
+

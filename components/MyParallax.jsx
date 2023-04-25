@@ -17,7 +17,7 @@ function MyParallax(props) {
     ];
 
     return (
-        <div className='relative pt-[100px] lg:pt-0 999 railway px-10 lg:px-0'>
+        <div className='relative railway px-10 lg:px-0 pb-12 lg:pb-0'>
 
             {projects ? projects.map((project, index) => {
                 return (

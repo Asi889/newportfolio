@@ -23,18 +23,18 @@ function About() {
   return (
     <div
       id="sec2"
-      className="about-page relative h-full grid  w-full   pt-10"
+      className="about-page relative h-full grid lg:pl-[100px] pl-0 w-full   pt-10"
     >
       <NextSeo {...seo} />
       <ParticlesBackground />
 
       <div
-        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full pr-4 md:pr-0  h-full bg-none z-50 overflow-y-scroll  ${
+        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full pr-4 md:pr-0  h-full bg-none z-50   ${
           theme.darkTheme ? "text-[#b3acac]" : "text-black"
         } relative  `}
       >
         {/* <div className="z-50 opacity-100 absolute  w-full h-fit p-4 pt-10"> */}
-          <h1 className="lg:text-[40px] text-[30px] relative z-[99999] text-[#47ebde] motion-text">
+          <h1 className="lg:text-[40px] text-[30px] relative z-[99999] text-[#47ebde] font-bold motion-text">
             <FramerText animateText={animateText} />
           </h1>
           <p className="first_text pt-4 font opacity-100 z-50">
