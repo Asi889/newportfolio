@@ -29,7 +29,7 @@ function About() {
       <ParticlesBackground />
 
       <div
-        className={`about_text railway lg:text-4xl text-3xl pl-4 w-full pr-4 md:pr-0  h-full bg-none z-50   ${
+        className={`about_text railway lg:text-[22px] text-xl pl-4 w-full pr-4 md:pr-0  h-full bg-none z-50   ${
           theme.darkTheme ? "text-[#b3acac]" : "text-black"
         } relative  `}
       >
@@ -49,7 +49,7 @@ function About() {
           <p className="second_text">
             I am a graduate of{" "}
             <a
-              className="bold_elevation font-extrabold text-4xl text-red-400"
+              className="bold_elevation font-extrabold text-[24px] text-red-400"
               href="https://www.elevation.ac"
             >
               Elevation Academy

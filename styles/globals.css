@@ -138,6 +138,11 @@ body {
   display: inline-block;
   font-size: 4rem;
 }
+.motion-text .about-framer-span{
+  /* display: inline-block; */
+  display: grid;
+  font-size: 4rem;
+}
 
 .motion-text .word-wrapper .smaller-title span{
   display: inline-block;
@@ -196,6 +201,11 @@ body {
     display: inline-block;
     font-size: 2rem;
     /* color: white; */
+  }
+  .motion-text .about-framer-span{
+    /* display: inline-block; */
+    /* display: grid; */
+    font-size: 2rem;
   }
 }
 

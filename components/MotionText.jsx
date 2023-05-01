@@ -2,8 +2,12 @@ import React, { useContext, useState } from 'react';
 import { motion, useAnimation, useAnimationControls } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { Context } from '../pages/_app';
+import { useRouter } from 'next/router'
 
 function MotionText(props,{children}) {
+  const router = useRouter();
+  console.log(router);
+  // console.log(router);
   const theme = useContext(Context)
   const {index, firstIndex} = props;
 
@@ -39,6 +43,7 @@ function MotionText(props,{children}) {
         <>
         {props.children === "." ? <br/> : " "}
         <motion.span
+        className="h-full"
         animate={controls}
         onHoverStart={()=>{
           if(!isPlaying){
@@ -48,7 +53,7 @@ function MotionText(props,{children}) {
         }}
         onAnimationComplete={()=>setIsPlaying(false)}
         >
-            <span className={`hover:text-[#47ebde] z-[999999999999999999999999] h-100%  ${theme.darkTheme ? "text-white" :"text-black"}  `}>
+            <span className={`hover:text-[#47ebde] ${router.pathname.includes("about") ? "about-framer-span" : ""} z-[999999999999999999999999] h-full grid items-center ${theme.darkTheme ? "text-white" :"text-black"}  `}>
           {props.children}
             </span>
         </motion.span>

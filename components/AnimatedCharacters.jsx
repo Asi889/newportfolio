@@ -87,7 +87,7 @@ const AnimatedCharacters = (props) => {
                   <motion.span
                     style={{ display: "inline-block" }}
                     variants={item}
-                    className={`text-lg  text-red-400 z-[999999999999999999999999] ${checkArrayEquality(firstIndex) ? "smaller-title " : " "} ${asiCheck(firstIndex) ? "asi-text" : ""}`}
+                    className={`text-lg h-full text-red-400 z-[999999999999999999999999] ${checkArrayEquality(firstIndex) ? "smaller-title " : " "} ${asiCheck(firstIndex) ? "asi-text" : ""}`}
                   >
                     <MotionText index={index} firstIndex={firstIndex} >
                       {element}

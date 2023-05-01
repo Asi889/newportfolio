@@ -33,7 +33,7 @@ const NavBar = function ({ isOpen, handleHamburger }) {
         
         <Hamburger isOpen={isOpen} handleHamburger={handleHamburger} />
 
-        <a className="navbar-brand railway text-2xl text-white z-50 lg:order-3 order-2" href="/assets/asafmaromcv.pdf" download target="_blank" rel="noopener">Asaf Marom</a>
+        <a className="navbar-brand railway text-2xl text-white text-center z-50 lg:order-3 order-2" href="/assets/asafmaromcv.pdf" download target="_blank" rel="noopener">Asaf Marom</a>
 
       </div>
     </div>
