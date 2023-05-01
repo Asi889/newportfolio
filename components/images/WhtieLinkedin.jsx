@@ -8,7 +8,7 @@ const WhtieLinkedin = () => {
             version="1.1"
             viewBox="0 0 455 455"
             xmlSpace="preserve"
-            className="w-10 h-10 fill-[#FFF]"
+            className="lg:w-10 lg:h-10 w-6 h-6 fill-[#FFF]"
         >
             <g fillRule="evenodd" clipRule="evenodd">
                 <path d="M246.4 204.35v-.665c-.136.223-.324.446-.442.665h.442z"></path>
