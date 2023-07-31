@@ -225,3 +225,6 @@ body {
   }
 }
 
+.button-link:hover .inner-path {
+  fill: white;
+}

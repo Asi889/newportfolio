@@ -20,13 +20,12 @@ const OpenNav = (props) => {
   const theme = useContext(Context);
 
   return (
-    <div className={`open-nav11 railway  ${theme.darkTheme ? "bg-[#363030]" : "bg-[#757373]"} md:grid block text-white z-40 px-4 h-full justify-center relative transition duration-[3s] ease-in-out  ${isOpen ? ' w-full text-center  justify-center   justify-items-center' : "w-0"}`}>
+    <div className={` railway relative ${theme.darkTheme ? "bg-[#363030]" : "bg-[#757373]"} md:grid block text-white z-40 px-4 h-full   transition duration-[2s] ease-in-out ${isOpen ? ' w-full text-center  justify-center   justify-items-center' : "w-0"}`}>
       
-      <div className="nav-links-wrapper self-end  mix-blend-difference pt-10 z-20 md:flex grid flex-wrap h-fit justify-center font-extrabold md:text-7xl text-4xl gap-x-10 md:gap-y-4 gap-y-8  transition-all duration-[2s] ease-in-out">
+      <div className="nav-links-wrapper self-end  mix-blend-difference pt-10 z-20 md:flex grid flex-wrap h-fit justify-center font-extrabold md:text-7xl text-4xl gap-x-10 md:gap-y-4 gap-y-8  transition-all duration-500 ease-in-out">
         {navLinks.map((nav) => {
           return (
             <a onMouseEnter={textEnter} onMouseLeave={textLeave} href={nav.to} key={nav.to} className={`nav-link italic border-b-2  ${theme.darkTheme ? "text-[#fff] border-white" : "text-[#727072] border-[#727072]"}   h-fit z-50   `} onClick={handleHamburger}>{nav.name}</a>
-            // <a onMouseEnter={textEnter} onMouseLeave={textLeave} href={nav.to} key={nav.to} className={`nav-link italic border-b-2  ${theme.darkTheme ? "text-[#fff]" : "text-[#5f5a5f]"}  border-white h-fit z-50   `} onClick={handleHamburger}>{nav.name}</a>
           )
         })}
         {/* mix-blend-exclusion */}
